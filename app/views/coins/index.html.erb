@@ -2,13 +2,29 @@
 
 <h1>Moedas</h1>
 
-<div id="coins">
-  <% @coins.each do |coin| %>
-    <%= render coin %>
-    <p>
-      <%= link_to "Mostrar essa moeda", coin %>
-    </p>
-  <% end %>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Sigla</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coins.each do |coin| %>
+      <tr>
+        <td><%= coin.description %></td>
+        <td><%= coin.acronym %></td>
+        <td> <%= image_tag coin.image_url, size: "25x25" %> </td>
+        <td><%= link_to 'Mostrar', coin %></td>
+        <td><%= link_to 'Editar', edit_coin_path(coin) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
 
 <%= link_to "Nova moeda", new_coin_path %>
