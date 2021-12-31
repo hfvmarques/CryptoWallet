@@ -6,8 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-puts "Cadastrando moedas..."
-
 Coin.create!(
   description: "Bitcoin",
   acronym: "BTC",
@@ -26,4 +24,4 @@ Coin.create!(
   image_url: "https://cryptologos.cc/logos/dash-dash-logo.png"
 )
 
-puts "Moedas cadastradas com sucesso!"
+puts "Mock data criado com sucesso!"
