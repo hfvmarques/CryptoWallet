@@ -23,5 +23,3 @@ Coin.create!(
   acronym: "DASH",
   image_url: "https://cryptologos.cc/logos/dash-dash-logo.png"
 )
-
-puts "Mock data criado com sucesso!"
