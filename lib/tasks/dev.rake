@@ -3,13 +3,10 @@ namespace :dev do
   task setup: :environment do
     if Rails.env.development?
       show_spinner('Apagando DB...') { %x(rails db:drop) }
-
       show_spinner('Criando DB...') { %x(rails db:create) }
-
       show_spinner('Migrando DB...') { %x(rails db:migrate) }
-
-      %x(rails dev:add_coins)
       %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
     else
       puts "Você não está em ambiente de desenvolvimento!"    
     end    
@@ -22,32 +19,38 @@ namespace :dev do
         {
           description: "Bitcoin",
           acronym: "BTC",
-          image_url: "https://imagensemoldes.com.br/wp-content/uploads/2020/09/%C3%8Dcone-Bitcoin-PNG.png"
+          image_url: "https://imagensemoldes.com.br/wp-content/uploads/2020/09/%C3%8Dcone-Bitcoin-PNG.png",
+          mining_type: MiningType.find_by(acronym: "PoW")
         },
         {
           description: "Ethereum",
           acronym: "ETH",
-          image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/   480px-Ethereum-icon-purple.  svg.png"
+          image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/   480px-Ethereum-icon-purple.  svg.png",
+          mining_type: MiningType.all.sample
         },
         {
           description: "Dash",
           acronym: "DASH",
-          image_url: "https://cryptologos.cc/logos/dash-dash-logo.png"
+          image_url: "https://cryptologos.cc/logos/dash-dash-logo.png",
+          mining_type: MiningType.all.sample
         },
         {
           description: "Chiliz",
           acronym: "CHZ",
-          image_url: "https://seeklogo.com/images/C/chiliz-chz-logo-605C6C40F6-seeklogo.com.png"
+          image_url: "https://seeklogo.com/images/C/chiliz-chz-logo-605C6C40F6-seeklogo.com.png",
+          mining_type: MiningType.all.sample
         },
         {
           description: "WiBX",
           acronym: "WBX",
-          image_url: "https://shaihocah6sodeiqueriengu.wibx.io/wp-content/uploads/2021/08/icone-wiboo-transparente.png"
+          image_url: "https://shaihocah6sodeiqueriengu.wibx.io/wp-content/uploads/2021/08/icone-wiboo-transparente.png",
+          mining_type: MiningType.all.sample
         },
         {
           description: "Riple",
           acronym: "XRP",
-          image_url: "https://www.pngall.com/wp-content/uploads/12/Ripple-Coin-PNG-Free-Image.png"
+          image_url: "https://www.pngall.com/wp-content/uploads/12/Ripple-Coin-PNG-Free-Image.png",
+          mining_type: MiningType.all.sample
         }
       ]
 
