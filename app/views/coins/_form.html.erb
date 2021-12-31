@@ -12,19 +12,24 @@
   <% end %>
 
   <div>
-    <%= form.label :"Descrição", style: "display: block" %>
+    <%= form.label :description, style: "display: block" %>
     <%= form.text_field :description %>
   </div>
 
   <div>
-    <%= form.label :"Acrônimo", style: "display: block" %>
+    <%= form.label :acronym, style: "display: block" %>
     <%= form.text_field :acronym %>
   </div>
 
   <div>
-    <%= form.label :"Url da Imagem", style: "display: block" %>
+    <%= form.label :image_url, style: "display: block" %>
     <%= form.text_field :image_url %>
   </div>  
+
+  <div class="field">
+    <%= form.label :mining_type, style: "display:block" %>
+    <%= form.select("mining_type_id", @mining_type_options, { include_blank: 'Selecione' }) %>
+  </div>
 
   <div>
     <%= form.submit %>
