@@ -30,8 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  actual_locale: "English US"
   hello: "Hello world"
   links:
+    new: "New"
     edit: "Edit"
     show: "Show"
-    delete: "Delete"
+    delete: "Delete"    
+  actions: "Actions"

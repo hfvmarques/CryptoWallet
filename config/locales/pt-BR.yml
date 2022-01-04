@@ -1,6 +1,9 @@
 pt-BR:
+  actual_locale: "Português do Brasil"
   hello: "Olá mundo"
   links:
+    new: "Novo"
     edit: "Editar"
     show: "Mostrar"
     delete: "Apagar"
+  actions: "Ações"

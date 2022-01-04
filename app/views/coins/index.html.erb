@@ -1,13 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Moedas</h1>
+<h1><%= @coins.model_name.human(count: 2) %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Description</th>
-      <th>Acronym</th>
-      <th>Image Url</th>
+      <th><%= @coins.human_attribute_name(:description) %></th>
+      <th><%= @coins.human_attribute_name(:acronym) %></th>
+      <th><%= @coins.human_attribute_name(:image_url) %></th>
+      <th><%= t(:actions) %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -27,4 +28,4 @@
 
 <br>
 
-<%= link_to "Nova moeda", new_coin_path %>
+<%= link_to t('links.new'), new_coin_path %>
