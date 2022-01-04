@@ -4,7 +4,7 @@
 
 <div>
   <%= link_to t('links.edit'), edit_coin_path(@coin) %> |
-  <%= link_to "Voltar", coins_path %>
+  <%= link_to t('links.back'), coins_path %>
 
   <%= button_to t('links.delete'), @coin, method: :delete %>
 </div>

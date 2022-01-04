@@ -4,7 +4,7 @@
 
 <div>
   <%= link_to t('links.edit'), edit_mining_type_path(@mining_type) %> |
-  <%= link_to "Back to mining types", mining_types_path %>
+  <%= link_to t('links.back'), mining_types_path %>
 
   <%= button_to t('links.delete'), @mining_type, method: :delete %>
 </div>
