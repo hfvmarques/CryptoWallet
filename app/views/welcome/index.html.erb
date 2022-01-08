@@ -1,3 +1,9 @@
+<p>
+  <%= link_to 'Português', root_path(locale: 'pt-BR') %>
+</p>
+<p>
+  <%= link_to 'English', root_path(locale: 'en') %>
+</p>
 <h1>Seja bem vindo!</h1>
 <!-- <p>Henrique Marques</p>
 <p>A soma é <%= 1+1 %></p>
@@ -6,7 +12,7 @@
 <p>Imprimindo a variável a: <%= a %></p>
 <p>A data de hoje é <%= Date.today %></p> -->
 
-<p>O idiota utilizado nessa aplicação é: <strong><%= t('actual_locale') %></strong></p>
+<p>O idioma utilizado nessa aplicação é: <strong><%= t('actual_locale') %></strong></p>
 
 <p><%= t('hello') %></p>
 
