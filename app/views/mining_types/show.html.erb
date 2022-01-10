@@ -5,14 +5,8 @@
 <%= render @mining_type %>
 
 <div>
-<<<<<<< HEAD
   <%= button_to t('links.delete'), @mining_type, method: :delete, class:"btn btn-danger" %>
   <br>
   <%= link_to t('links.edit'), edit_mining_type_path(@mining_type), class:"btn btn-warning" %> |
-=======
-  <%= button_to t('links.delete'), @mining_type, method: :delete, class:"btn btn-primary" %>
-  <br>
-  <%= link_to t('links.edit'), edit_mining_type_path(@mining_type), class:"btn btn-primary" %> |
->>>>>>> 3d3396c53039c288db7548a6c447559a487dd9b8
   <%= link_to t('links.back'), mining_types_path, class:"btn btn-primary" %>
 </div>
