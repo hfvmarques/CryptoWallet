@@ -11,3 +11,12 @@ pt-BR:
     show: "Mostrar"
     delete: "Apagar"
   actions: "Ações"
+  new:
+    coin: "Nova Moeda"
+    mining_type: "Novo Tipo de Mineração"
+  edit:
+    coin: "Editar Moeda"
+    mining_type: "Editar Tipo de Mineração"
+  show:
+    coin: "Mostrar Moeda"
+    mining_type: "Mostrar Tipo de Mineração"
