@@ -11,4 +11,25 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_self
+ *= require bootstrap
  */
+
+ body {
+   background-color: #fff;
+   color: #333;
+   margin: 33px;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   line-height: 18px;
+ }
+
+ p, ol, ul, td {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 13px;
+   line-height: 18px;
+ }
+
+ pre {
+   background-color: #eee;
+   padding: 10px;
+ }
