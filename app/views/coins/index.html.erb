@@ -18,9 +18,9 @@
       <tr>
         <td><%= coin.description %></td>
         <td><%= coin.acronym %></td>
-        <td> <%= image_tag coin.image_url, size: "25x25" %> </td>
-        <td><%= link_to t('links.show'), coin %></td>
-        <td><%= link_to t('links.edit'), edit_coin_path(coin) %></td>
+        <td> <%= image_tag coin.image_url, size: "35x35" %> </td>
+        <td><%= link_to t('links.show'), coin, class:"btn btn-success" %></td>
+        <td><%= link_to t('links.edit'), edit_coin_path(coin), class:"btn btn-warning" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,5 @@
 
 <br>
 
-<%= link_to t('links.new'), new_coin_path %>
+<%= link_to t('links.back'), welcome_index_path, class:"btn btn-primary" %>
+<%= link_to t('links.new'), new_coin_path, class:"btn btn-primary" %>
