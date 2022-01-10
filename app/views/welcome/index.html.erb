@@ -1,25 +1,8 @@
-<p>
-  <%= link_to 'Português', root_path(locale: 'pt-BR') %>
-</p>
-<p>
-  <%= link_to 'English', root_path(locale: 'en') %>
-</p>
-<h1>Seja bem vindo!</h1>
-<!-- <p>Henrique Marques</p>
-<p>A soma é <%= 1+1 %></p>
-<p>Seu nome inverso é <%= "Henrique".reverse %></p>
-<% a = "variável" %>
-<p>Imprimindo a variável a: <%= a %></p>
-<p>A data de hoje é <%= Date.today %></p> -->
-
-<p>O idioma utilizado nessa aplicação é: <strong><%= t('actual_locale') %></strong></p>
-
-<p><%= t('hello') %></p>
-
-<p><strong>Data:</strong> <%= l(Date.today) %></p>
-
+<div class="jumbotron">
+  <h1 class="display-4">Seja bem vindo!</h1>
+  <p class="lead">Este é o Crypto-Wallet, um web app para cadastro e acompanhamento de crypto moedas</p>
+  <hr class="my-4">
+  <p>Para começar, selecione uma das opções abaixo:</p>
 <%= render "menu" %>
+</div>
 
-<p>
-  Você está em ambiente de <strong><%= ambiente_rails %></strong>
-</p>
