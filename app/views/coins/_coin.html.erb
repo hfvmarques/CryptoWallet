@@ -1,22 +1,25 @@
 <div id="<%= dom_id coin %>">
-  <p>
-    <strong><%= Coin.human_attribute_name(:description) %>:</strong>
-    <%= coin.description %>
-  </p>
-
-  <p>
-    <strong><%= Coin.human_attribute_name(:acronym) %>:</strong>
-    <%= coin.acronym %>
-  </p>
-
-  <p>
-    <strong><%= Coin.human_attribute_name(:image_url) %>:</strong>
-    <%= image_tag coin.image_url, size: "25x25" %>
-  </p>
-
-  <p>
-    <strong><%= Coin.human_attribute_name(:mining_type) %>:</strong>
-    <%= coin.mining_type.description %>
-  </p>
-
+  <form>
+    <fieldset disabled>
+      <div class="form-group">
+        <label><%= Coin.human_attribute_name(:description) %></label>
+        <input type="text" class="form-control" placeholder=<%= coin.description %>>
+      </div>
+      <div class="form-group">
+        <label><%= Coin.human_attribute_name(:acronym) %></label>
+        <input type="text" class="form-control" placeholder=<%= coin.acronym %>>
+      </div>
+      <div class="form-group">
+        <label><%= Coin.human_attribute_name(:image_url) %></label>
+        <input type="text" class="form-control" placeholder=<%= coin.image_url %>>
+      </div>
+      <div class="form-group">
+        <label><%= Coin.human_attribute_name(:mining_type) %></label>
+        <select id="disabledSelect" class="form-control">
+          <option><%= coin.mining_type.description %></option>
+        </select>
+      </div>      
+    </fieldset>
+  </form>
 </div>
+<br>

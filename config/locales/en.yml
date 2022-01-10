@@ -42,3 +42,12 @@ en:
     show: "Show"
     delete: "Delete"    
   actions: "Actions"
+  new:
+    coin: "New Coin"
+    mining_type: "New Mining Type"
+  edit:
+    coin: "Edit Coin"
+    mining_type: "Edit Mining Type"
+  show:
+    coin: "Show Coin"
+    mining_type: "Show Mining Type"

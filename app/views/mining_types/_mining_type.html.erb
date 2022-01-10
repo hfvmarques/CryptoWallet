@@ -1,12 +1,15 @@
 <div id="<%= dom_id mining_type %>">
-  <p>
-    <strong><%= MiningType.human_attribute_name(:description) %>:</strong>
-    <%= mining_type.description %>
-  </p>
-
-  <p>
-    <strong><%= MiningType.human_attribute_name(:acronym) %>:</strong>
-    <%= mining_type.acronym %>
-  </p>
-
+  <form>
+    <fieldset disabled>
+      <div class="form-group">
+        <label><%= MiningType.human_attribute_name(:description) %></label>
+        <input type="text" class="form-control" placeholder=<%= mining_type.description %>>
+      </div>
+      <div class="form-group">
+        <label><%= MiningType.human_attribute_name(:description) %></label>
+        <input type="text" class="form-control" placeholder=<%= mining_type.acronym %>>
+      </div>    
+    </fieldset>
+  </form>
 </div>
+<br>
