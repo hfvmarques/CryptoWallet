@@ -1,5 +1,8 @@
 pt-BR:
   actual_locale: "Português do Brasil"
+  welcome: "Seja bem vindo!"
+  welcome_message: "Este é o Crypto-Wallet, um web app para cadastro e acompanhamento de crypto moedas."
+  menu_message: "Para começar, selecione uma das opções abaixo:"
   hello: "Olá mundo"
   links:
     new: "Novo"

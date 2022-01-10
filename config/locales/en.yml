@@ -31,6 +31,9 @@
 
 en:
   actual_locale: "English US"
+  welcome: "Welcome!"
+  welcome_message: "This is Crypto-Wallet, a crypto currency management web app"
+  menu_message: "To start, pick an option below:"
   hello: "Hello world"
   links:
     new: "New"
