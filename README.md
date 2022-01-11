@@ -7,3 +7,5 @@ Web App simples de cadastro de crypto moedas criada através do curso [Ruby on R
 * Rails 7
 
 * DB Postgres
+
+[Acessar Aplicação](https://crypto-wallet-ruby.herokuapp.com/)
