@@ -121,6 +121,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.7.1)
     minitest (5.15.0)
     msgpack (1.4.2)
     net-imap (0.2.3)
@@ -139,8 +140,12 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.0)
+      mini_portile2 (~> 2.7.0)
+      racc (~> 1.4)
     nokogiri (1.13.0-x86_64-linux)
       racc (~> 1.4)
+    pg (1.2.3)
     popper_js (2.9.3)
     pry (0.14.1)
       coderay (~> 1.1)
@@ -240,6 +245,7 @@ GEM
     zeitwerk (2.5.3)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -248,6 +254,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  pg
   popper_js (~> 2.9.3)
   pry-rails
   puma (~> 5.0)
